@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "741353329778",
+    "project_id": "coucou-1313",
+    "storage_bucket": "coucou-1313.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741353329778:android:4d0d8439c45cec1fb1deeb",
+        "android_client_info": {
+          "package_name": "com.ogzhnarslnts.coucou"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "741353329778-d19frf5tqo7bk0qf4g82b2g4qn19olkh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAF2Vwsg31p3LXVNtol524Ry5NF9Cb2m4w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "741353329778-d19frf5tqo7bk0qf4g82b2g4qn19olkh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
