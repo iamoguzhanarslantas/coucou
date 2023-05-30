@@ -1,5 +1,5 @@
+import 'package:coucou/core/string_extensions.dart';
 import 'package:flutter/material.dart';
-import '../core/string_extensions.dart';
 
 class UserCardWidget extends StatelessWidget {
   const UserCardWidget({Key? key}) : super(key: key);
@@ -12,16 +12,16 @@ class UserCardWidget extends StatelessWidget {
         child: Text('j'.firstLetter,
             style: Theme.of(context)
                 .textTheme
-                .headline5
+                .headlineSmall
                 ?.copyWith(color: Colors.white)),
       ),
       title: Text(
         'John',
-        style: Theme.of(context).textTheme.headline5,
+        style: Theme.of(context).textTheme.headlineSmall,
       ),
       trailing: IconButton(
         onPressed: () {},
-        icon: Icon(Icons.message),
+        icon: const Icon(Icons.message),
       ),
     );
   }

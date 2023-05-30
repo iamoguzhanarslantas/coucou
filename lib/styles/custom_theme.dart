@@ -4,6 +4,10 @@ Color primaryColor = Colors.red.shade900;
 Color appBarColor = Colors.yellow;
 
 ThemeData customTheme = ThemeData(
-    primaryColor: primaryColor,
-    appBarTheme: AppBarTheme(centerTitle: true, backgroundColor: primaryColor),
-    scaffoldBackgroundColor: appBarColor);
+  primaryColor: primaryColor,
+  appBarTheme: AppBarTheme(
+    centerTitle: true,
+    backgroundColor: primaryColor,
+  ),
+  scaffoldBackgroundColor: appBarColor,
+);

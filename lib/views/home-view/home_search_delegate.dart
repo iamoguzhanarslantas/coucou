@@ -3,21 +3,21 @@ import 'package:flutter/material.dart';
 
 class HomeSearchDelegate extends SearchDelegate {
   @override
-  List<Widget>? buildActions(BuildContext context) {
+  List<Widget> buildActions(BuildContext context) {
     return [
       IconButton(
-        icon: Icon(
+        icon: const Icon(
           Icons.delete,
         ),
         onPressed: () {},
-      )
+      ),
     ];
   }
 
   @override
-  Widget? buildLeading(BuildContext context) {
+  Widget buildLeading(BuildContext context) {
     return IconButton(
-      icon: Icon(Icons.keyboard_arrow_left),
+      icon: const Icon(Icons.keyboard_arrow_left),
       onPressed: () => Navigator.of(context).pop(),
     );
   }
@@ -27,14 +27,15 @@ class HomeSearchDelegate extends SearchDelegate {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: ListView.separated(
-          separatorBuilder: (_, __) => SizedBox(height: 15),
-          itemCount: 5,
-          itemBuilder: (_, index) => MessageBubbleWidget(index: index)),
+        separatorBuilder: (_, __) => const SizedBox(height: 15),
+        itemCount: 5,
+        itemBuilder: (_, index) => MessageBubbleWidget(index: index),
+      ),
     );
   }
 
   @override
   Widget buildSuggestions(BuildContext context) {
-    return Column();
+    return const Column();
   }
 }

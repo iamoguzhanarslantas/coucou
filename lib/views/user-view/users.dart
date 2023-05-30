@@ -9,19 +9,23 @@ class Users extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BaseView(
-        appBar: AppBar(
-          title: Text(
-            'Users',
-            style: Theme.of(context).textTheme.headline4,
-          ),
+      appBar: AppBar(
+        title: Text(
+          'Users',
+          style: Theme.of(context).textTheme.headlineMedium,
         ),
-        child: ListView.separated(
-            separatorBuilder: (_, __) => SizedBox(
-                  height: 20,
-                ),
-            itemCount: 10,
-            itemBuilder: (_, index) => UserCardWidget()));
+      ),
+      child: ListView.separated(
+        separatorBuilder: (_, __) => const SizedBox(
+          height: 20,
+        ),
+        itemCount: 10,
+        itemBuilder: (_, index) => const UserCardWidget(),
+      ),
+    );
   }
 
-  Widget _appBar(context) => AppBar(title: AppTitleWidget(title: 'Users'));
+  Widget _appBar(context) => AppBar(
+        title: const AppTitleWidget(title: 'Users'),
+      );
 }

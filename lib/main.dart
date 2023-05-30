@@ -7,7 +7,9 @@ import 'package:coucou/views/user-view/users.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(
+    const MyApp(),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -18,10 +20,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: customTheme,
       title: 'CouCou Chat',
-      home: Splash(),
+      home: const Splash(),
       routes: {
-        Routes.homeRoute: (_) => Home(),
-        Routes.usersRoute: (_) => Users(),
+        Routes.homeRoute: (_) => const Home(),
+        Routes.usersRoute: (_) => const Users(),
         Routes.signInRoute: (_) => SignIn(),
       },
     );
